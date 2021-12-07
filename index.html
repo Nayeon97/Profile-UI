@@ -15,13 +15,18 @@
     <div class="container">
         <div class="banner">
             <div class="profile">
-                <img src="favicon.png.png" alt="profile jpg" class="profile-img">
+                <img src="favicon.png.png" alt="profile jpg" class="profile-img" id="img-btn">
             </div>
         </div>
         <h2 class="name">NaakiteCode</h2>
         <div class="follow-btn">
-            <button class="follow-button">click me</button>
+            <button class="follow-button" onclick="toggleimg()">click me</button>
         </div>
+        <script>
+            function toggleimg(){
+                document.getElementById("img-btn").src= "smile.png";
+            }
+        </script>
         <div class="desc">
             쉽게 만들 수 있는 프로필입니다. <br>'비전공자를 위한 첫 코딩 챌린지' 책을 <br>참고하여 만들었습니다.
         </div>
@@ -69,10 +74,10 @@
         width: 100%;
         height: 100%;
         border-radius: 150px;
-
     }
+    
 
-    .profile:hover{
+    .profile:hover{ 
       transform:  scale(1.4);
       transition: .5s;
     }
@@ -106,7 +111,8 @@
     }
 
     .follow-button:hover{
-        background-color: lightskyblue;
+        background-color: cornflowerblue;
+
     }
 
     .desc{
