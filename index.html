@@ -20,14 +20,15 @@
         </div>
         <h2 class="name">NaakiteCode</h2>
         <div class="follow-btn">
-            <button class="follow-button" onclick="toggleimg()">click me</button>
+            <button class="follow-button" onclick="togglebtn()">click me</button>
         </div>
         <script>
-            function toggleimg(){
+            function togglebtn(){
                 document.getElementById("img-btn").src= "smile.png";
+                document.getElementById("span-btn").innerHTML = "간단하죠!";
             }
         </script>
-        <div class="desc">
+        <div class="desc" id="span-btn"> 
             쉽게 만들 수 있는 프로필입니다. <br>'비전공자를 위한 첫 코딩 챌린지' 책을 <br>참고하여 만들었습니다.
         </div>
     </div>
@@ -107,6 +108,10 @@
     .follow-button:hover{
         background-color: cornflowerblue;
 
+    }
+
+    .follow-button:focus {
+        background-color: pink;
     }
 
     .desc{
